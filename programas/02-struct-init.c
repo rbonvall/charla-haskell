@@ -1,13 +1,13 @@
 struct node x, y, z;
 
 x.tag = INT;
-x.payload = 68;
+x.payload.i = 68;
 x.next = &y;
 
 y.tag = STRING;
-y.payload = "hola";
+y.payload.s = "hola";
 y.next = &z;
 
 z.tag = INT;
-z.payload = 41;
+z.payload.i = 41;
 z.next = NULL;
