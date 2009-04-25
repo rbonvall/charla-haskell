@@ -1,0 +1,70 @@
+\documentclass[12pt]{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\usecolortheme{crane}
+
+\usepackage{palatino}
+\usefonttheme{serif}
+
+\title {Programación funcional en Haskell}
+\author{Roberto Bonvallet}
+\institute[]{
+    Departamento de Informática \\
+    Universidad Técnica Federico Santa María
+}
+\date{Mayo de 2009}
+
+\definecolor{lst-hs-bg}{rgb}{0.8, 0.8, 1.0}
+\definecolor{lst-c-bg} {rgb}{1.0, 0.8, 0.8}
+
+\lstloadlanguages{c,haskell}
+\lstdefinestyle{hs}{
+    language=haskell,
+    %backgroundcolor=\color{lst-hs-bg},
+    literate={->}{{$\rightarrow$}}1
+             {<-}{{$\leftarrow$}}1
+             {=>}{{$\Rightarrow$}}1
+             {>=}{{$\ge$}}1
+             {<=}{{$\le$}}1
+             {\\}{{$\lambda$}}1,
+}
+\lstdefinestyle{c}{
+    language=c,
+    %backgroundcolor=\color{lst-c-bg},
+}
+%\lstset{style=hs}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+    
+\begin{frame}[fragile]
+    \lstinputlisting[style=c]{programas/01-struct.c}
+\end{frame}
+
+\begin{frame}[fragile]
+    \lstinputlisting[style=c]{programas/02-struct-init.c}
+\end{frame}
+
+\begin{frame}[fragile]
+    \lstinputlisting[style=c]{programas/03-struct-maxint.c}
+\end{frame}
+
+\begin{frame}[fragile]
+    \lstinputlisting[style=hs]{programas/qs.hs}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Quicksort}
+        \lstinputlisting[language=Haskell]{programas/qs.hs}
+    \end{block}
+\end{frame}
+
+
+\end{document}
+
