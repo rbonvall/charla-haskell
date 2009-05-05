@@ -48,36 +48,71 @@
     \end{block}
 \end{frame}
     
-\begin{frame}[fragile]
-    \lstinputlisting[style=c]{programas/01-struct.c}
-\end{frame}
+%\begin{frame}[fragile]
+%    \lstinputlisting[style=c]{programas/01-struct.c}
+%\end{frame}
+%
+%\begin{frame}[fragile]
+%    \lstinputlisting[style=c]{programas/02-struct-init.c}
+%\end{frame}
+%
+%\begin{frame}[fragile]
+%    \lstinputlisting[style=c]{programas/03-struct-maxint.c}
+%\end{frame}
 
-\begin{frame}[fragile]
-    \lstinputlisting[style=c]{programas/02-struct-init.c}
-\end{frame}
-
-\begin{frame}[fragile]
-    \lstinputlisting[style=c]{programas/03-struct-maxint.c}
-\end{frame}
-
-\begin{frame}[fragile]
-    \lstinputlisting[style=hs]{programas/qs.hs}
-\end{frame}
-
-\begin{frame}[fragile]
-    \begin{block}{Quicksort}
-        \lstinputlisting[language=Haskell]{programas/qs.hs}
-    \end{block}
-\end{frame}
+%%\begin{frame}[fragile]
+%%    \begin{block}{Quicksort}
+%%        \lstinputlisting[style=hs]{programas/qs.hs}
+%%    \end{block}
+%%\end{frame}
 
 \begin{frame}[fragile]
     \begin{block}{¿Qué hace esto?}
         \lstinputlisting[style=c,linerange=11-13]{programas/reduce.cpp}
     \end{block}
+    \pause
     \begin{block}{¿Y esto?}
         \lstinputlisting[style=c,linerange=21-23]{programas/reduce.cpp}
     \end{block}
-    %}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{¿Y esto otro?}
+        \lstinputlisting[style=c,linerange=31-33]{programas/reduce.cpp}
+    \end{block}
+    \pause
+    \begin{block}{¿Y esto de ac\'a?}
+        \lstinputlisting[style=c,linerange=41-43]{programas/reduce.cpp}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{El patr\'on com\'un}
+        \LARGE
+        \begin{lstlisting}[style=c,escapechar=\&,gobble=12]
+            z = &\alert{z$_0$}&;
+            for (i = 0; i < n; ++i)
+                z = &\alert{f(}&z, a[i]&\alert{)}&;
+        \end{lstlisting}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{En ``funcional''}
+        \lstinputlisting[style=hs,linerange=1-12]{programas/reduce.hs}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Función \lstinline[style=hs]!foldl!}
+        \lstinputlisting[style=hs,linerange=15-19]{programas/reduce.hs}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Definición de \lstinline[style=hs]!foldl!}
+        \lstinputlisting[style=hs,linerange=21-23]{programas/reduce.hs}
+    \end{block}
 \end{frame}
 
 
