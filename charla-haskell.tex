@@ -113,6 +113,29 @@
 \end{frame}
 
 \begin{frame}[fragile]
+    \begin{block}{Definición de funciones}
+        \begin{lstlisting}[style=hs,gobble=12]
+            fact 0 = 1
+            fact x = x * fact (x - 1)
+        \end{lstlisting}
+    \end{block}
+    \pause
+    \begin{block}{Operadores son funciones}
+        \begin{lstlisting}[style=hs,gobble=12]
+            41 * 200
+            (*) 41 200
+        \end{lstlisting}
+    \end{block}
+    \pause
+    \begin{block}{Funciones son operadores}
+        \begin{lstlisting}[style=hs,gobble=12]
+            elem 2 [1..10]
+            2 `elem` [1..10]
+        \end{lstlisting}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
     \begin{block}{Quicksort}
         \Large
         \vspace{1ex}
