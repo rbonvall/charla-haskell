@@ -63,12 +63,6 @@
 %    \lstinputlisting[style=c]{programas/03-struct-maxint.c}
 %\end{frame}
 
-%%\begin{frame}[fragile]
-%%    \begin{block}{Quicksort}
-%%        \lstinputlisting[style=hs]{programas/qs.hs}
-%%    \end{block}
-%%\end{frame}
-
 \begin{frame}[fragile]
     \begin{block}{¿Qué hace esto?}
         \lstinputlisting[style=c,linerange=11-13]{programas/reduce.cpp}
@@ -115,6 +109,23 @@
 \begin{frame}[fragile]
     \begin{block}{Definición de \lstinline[style=hs]!foldl!}
         \lstinputlisting[style=hs,linerange=21-23]{programas/reduce.hs}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Quicksort}
+        \Large
+        \vspace{1ex}
+        \centering
+        \begin{tabular}{*{8}{ >{\hfil} p{1em} <{\hfil} }} \hline
+            \multicolumn{3}{|c}{} & $p$ & \multicolumn{4}{c|}{}              \\\hline
+            &&&&&&& \\\cline{1-4}\cline{6-8}
+            \multicolumn{4}{|c|}{$<p$} & $p$ & \multicolumn{3}{|c|}{$\ge p$} \\\cline{1-4}\cline{6-8}
+        \end{tabular}
+    \end{block}
+    \pause
+    \begin{block}{En Haskell}
+        \lstinputlisting[style=hs]{programas/qs.hs}
     \end{block}
 \end{frame}
 
