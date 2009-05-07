@@ -190,6 +190,74 @@
     \end{block}
 \end{frame}
 
+\begin{frame}[fragile]
+    \begin{block}{Dígito verificador, versión 1}
+        \lstinputlisting[style=hs,linerange=3-14]{programas/rut.hs}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Dígito verificador, algunas simplificaciones}
+        \lstinputlisting[style=hs,linerange=16-23]{programas/rut.hs}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Dígito verificador, más astuto de la cuenta}
+        \lstinputlisting[style=hs,linerange=25-29]{programas/rut.hs}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Composición}
+        \begin{lstlisting}[style=hs,gobble=12,escapechar=\&]
+            f :: a -> b
+            g :: b -> c
+            (f . g) :: a -> c
+        \end{lstlisting}
+    \end{block}
+    \pause
+    \begin{block}{Currying}
+        \begin{lstlisting}[style=hs,gobble=12,escapechar=\&]
+            zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
+            zipWith (+) :: (Num a) =>
+                           [a] -> [a] -> [a]
+            zipWith (+) [1..10] :: (Enum a, Num a) =>
+                                   [a] -> [a]
+        \end{lstlisting}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Dígito verificador, composición + currying}
+        \lstinputlisting[style=hs,linerange=31-34]{programas/rut.hs}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Dígito verificador, propiedades de mod 11}
+        \lstinputlisting[style=hs,linerange=36-39]{programas/rut.hs}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Dígito verificador \textit{point-free}}
+        \lstinputlisting[style=hs,linerange=41-44]{programas/rut.hs}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Tipos de datos algebraicos}
+        \lstinputlisting[style=hs]{programas/datatypes.hs}
+    \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+    \begin{block}{Tipos parametrizados}
+        \lstinputlisting[style=hs]{programas/tree.hs}
+    \end{block}
+\end{frame}
+
 \begin{frame}
     \frametitle{Recursos}
     \begin{thebibliography}{99}
