@@ -18,7 +18,11 @@ concat''   = foldl (++) ""
 any_even'' = foldl (\ x y ->
                    x || even y) False 
 
-foldl':: (a -> b -> a) -> a -> [b] -> a
-foldl' f z0 []     = z0
-foldl' f z0 (x:xs) = foldl' f (f z0 x) xs
+{-
+foldl:: (a -> b -> a) -> a -> [b] -> a
+foldl f z0 []     = z0
+foldl f z0 (x:xs) = foldl f (f z0 x) xs
+-}
+
+main = putStrLn ""
 
