@@ -175,6 +175,14 @@
 \end{frame}
 
 \begin{frame}[fragile]
+    \begin{block}{Fibonacci vieja escuela}
+        \begin{lstlisting}[style=hs,gobble=12]
+            fib 0 = 1
+            fib 1 = 1
+            fib x = fib (x - 1) + fib (x - 2)
+        \end{lstlisting}
+    \end{block}
+    \pause
     \begin{block}{Fibonacci perezoso}
         \begin{lstlisting}[style=hs,gobble=12]
             fib = 1 : 1 : (zipWith (+) fib $ tail fib)
