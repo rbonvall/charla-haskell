@@ -175,6 +175,14 @@
     \end{block}
 \end{frame}
 
+\begin{frame}[fragile]
+    \begin{block}{Fibonacci perezoso}
+        \begin{lstlisting}[style=hs,gobble=12]
+            fib = 1 : 1 : (zipWith (+) fib $ tail fib)
+        \end{lstlisting}
+    \end{block}
+\end{frame}
+
 \begin{frame}
     \frametitle{Recursos}
     \begin{thebibliography}{99}
